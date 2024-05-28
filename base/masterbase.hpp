@@ -1,3 +1,6 @@
+#ifndef MASTERBASE_HPP
+#define MASTERBASE_HPP
+
 #include <ws2tcpip.h>
 #include <iostream>
 #include <Windows.h>
@@ -10,10 +13,6 @@
 #include <thread>
 #include <memory>
 
-#ifndef MASTERBASE_HPP
-#define MASTERBASE_HPP
-
-
 class MasterBase {
 private:
     SOCKET serverSocket;
@@ -23,7 +22,6 @@ private:
     void InitializeNetworking();
     void InitializeDatabase();
     
-
 public:
     MasterBase();
     ~MasterBase();

@@ -211,7 +211,6 @@ void ServerFlowManagement::SendPastMessages(int channelId) {
         );
         pstmt->setInt(1, channelId);
 
-        // Execute the query
         sql::ResultSet* res = pstmt->executeQuery();
 
         // Iterate through the results and send each message to the client
